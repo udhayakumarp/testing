@@ -1,0 +1,1745 @@
+/*Tu, 20 Dec 2016 | Author: VijayaNaidu */
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica/Helvetica.eot?#iefix') format('embedded-opentype'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica/Helvetica.woff') format('woff'),
+     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica/Helvetica.ttf')  format('truetype'),
+      url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica/Helvetica.svg#Helvetica') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica-Light';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-Light/Helvetica-Light.eot?#iefix') format('embedded-opentype'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-Light/Helvetica-Light.woff') format('woff'),
+     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-Light/Helvetica-Light.ttf')  format('truetype'),
+      url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-Light/Helvetica-Light.svg#Helvetica-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Helvetica-LightOblique';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-LightOblique/Helvetica-LightOblique.eot?#iefix') format('embedded-opentype'),
+  url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-LightOblique/Helvetica-LightOblique.woff') format('woff'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-LightOblique/Helvetica-LightOblique.ttf')  format('truetype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-LightOblique/Helvetica-LightOblique.svg#Helvetica-LightOblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica-LightOblique';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-LightOblique/Helvetica-LightOblique.eot?#iefix') format('embedded-opentype'),
+  url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-LightOblique/Helvetica-LightOblique.woff') format('woff'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-LightOblique/Helvetica-LightOblique.ttf')  format('truetype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/Helvetica-LightOblique/Helvetica-LightOblique.svg#Helvetica-LightOblique') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue/HelveticaNeue.eot?#iefix') format('embedded-opentype'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue/HelveticaNeue.woff') format('woff'),
+     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue/HelveticaNeue.ttf')  format('truetype'),
+     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue/HelveticaNeue.svg#HelveticaNeue') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue-Bold';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Bold/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Bold/HelveticaNeue-Bold.woff') format('woff'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Bold/HelveticaNeue-Bold.ttf')  format('truetype'),
+     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Bold/HelveticaNeue-Bold.svg#HelveticaNeue-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue-BoldItalic';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-BoldItalic/HelveticaNeue-BoldItalic.eot?#iefix') format('embedded-opentype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-BoldItalic/HelveticaNeue-BoldItalic.woff') format('woff'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-BoldItalic/HelveticaNeue-BoldItalic.ttf')  format('truetype'),
+     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-BoldItalic/HelveticaNeue-BoldItalic.svg#HelveticaNeue-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-CondensedBlack';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-CondensedBlack/HelveticaNeue-CondensedBlack.eot?#iefix') format('embedded-opentype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-CondensedBlack/HelveticaNeue-CondensedBlack.woff') format('woff'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-CondensedBlack/HelveticaNeue-CondensedBlack.ttf')  format('truetype'),
+     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-CondensedBlack/HelveticaNeue-CondensedBlack.svg#HelveticaNeue-CondensedBlack') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-CondensedBold';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-CondensedBold/HelveticaNeue-CondensedBold.eot?#iefix') format('embedded-opentype'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-CondensedBold/HelveticaNeue-CondensedBold.woff') format('woff'),
+     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-CondensedBold/HelveticaNeue-CondensedBold.ttf')  format('truetype'),
+      url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-CondensedBold/HelveticaNeue-CondensedBold.svg#HelveticaNeue-CondensedBold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue-Italic';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Italic/HelveticaNeue-Italic.eot?#iefix') format('embedded-opentype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Italic/HelveticaNeue-Italic.woff') format('woff'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Italic/HelveticaNeue-Italic.ttf')  format('truetype'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Italic/HelveticaNeue-Italic.svg#HelveticaNeue-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeue-Light';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Light/HelveticaNeue-Light.eot?#iefix') format('embedded-opentype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Light/HelveticaNeue-Light.woff') format('woff'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Light/HelveticaNeue-Light.ttf')  format('truetype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Light/HelveticaNeue-Light.svg#HelveticaNeue-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue-LightItalic';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-LightItalic/HelveticaNeue-LightItalic.eot?#iefix') format('embedded-opentype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-LightItalic/HelveticaNeue-LightItalic.woff') format('woff'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-LightItalic/HelveticaNeue-LightItalic.ttf')  format('truetype'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-LightItalic/HelveticaNeue-LightItalic.svg#HelveticaNeue-LightItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue-Medium';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Medium/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Medium/HelveticaNeue-Medium.woff') format('woff'),
+     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Medium/HelveticaNeue-Medium.ttf')  format('truetype'),
+     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Medium/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue-Thin';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Thin/HelveticaNeue-Thin.eot?#iefix') format('embedded-opentype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Thin/HelveticaNeue-Thin.woff') format('woff'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Thin/HelveticaNeue-Thin.ttf')  format('truetype'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-Thin/HelveticaNeue-Thin.svg#HelveticaNeue-Thin') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue-UltraLight';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-UltraLight/styles.cssHelveticaNeue-UltraLight.eot?#iefix') format('embedded-opentype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-UltraLight/styles.cssHelveticaNeue-UltraLight.woff') format('woff'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-UltraLight/styles.cssHelveticaNeue-UltraLight.ttf')  format('truetype'),
+     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-UltraLight/styles.cssHelveticaNeue-UltraLight.svg#HelveticaNeue-UltraLight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeue-UltraLightItalic';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-UltraLightItalic/HelveticaNeue-UltraLightItalic.eot?#iefix') format('embedded-opentype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-UltraLightItalic/HelveticaNeue-UltraLightItalic.woff') format('woff'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-UltraLightItalic/HelveticaNeue-UltraLightItalic.ttf')  format('truetype'),
+   url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeue-UltraLightItalic/HelveticaNeue-UltraLightItalic.svg#HelveticaNeue-UltraLightItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Lt';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeueLTStd-Lt/HelveticaNeueLTStd-Lt.eot?#iefix') format('embedded-opentype'),
+  url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeueLTStd-Lt/HelveticaNeueLTStd-Lt.otf')  format('opentype'),
+	     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeueLTStd-Lt/HelveticaNeueLTStd-Lt.woff') format('woff'),
+       url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeueLTStd-Lt/HelveticaNeueLTStd-Lt.ttf')  format('truetype'),
+       url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeueLTStd-Lt/HelveticaNeueLTStd-Lt.svg#HelveticaNeueLTStd-Lt') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HelveticaNeueLTStd-Th';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeueLTStd-Th/HelveticaNeueLTStd-Th.eot?#iefix') format('embedded-opentype'),
+    url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeueLTStd-Th/HelveticaNeueLTStd-Th.otf')  format('opentype'),
+	     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeueLTStd-Th/HelveticaNeueLTStd-Th.woff') format('woff'),
+        url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeueLTStd-Th/HelveticaNeueLTStd-Th.ttf')  format('truetype'),
+         url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/Font_Helvetica/HelveticaNeueLTStd-Th/HelveticaNeueLTStd-Th.svg#HelveticaNeueLTStd-Th') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaInseratLTStd-Roman';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/HelveticaInseratLTStd-Roman/HelveticaInseratLTStd-Roman.eot?#iefix') format('embedded-opentype'),  url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/HelveticaInseratLTStd-Roman/HelveticaInseratLTStd-Roman.otf')  format('opentype'),
+	     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/HelveticaInseratLTStd-Roman/HelveticaInseratLTStd-Roman.woff') format('woff'), url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/HelveticaInseratLTStd-Roman/HelveticaInseratLTStd-Roman.ttf')  format('truetype'), url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/HelveticaInseratLTStd-Roman/HelveticaInseratLTStd-Roman.svg#HelveticaInseratLTStd-Roman') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'LibreBaskerville-Italic';
+  src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/LibreBaskerville-Italic/LibreBaskerville-Italic.eot?#iefix') format('embedded-opentype'),  url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/LibreBaskerville-Italic/LibreBaskerville-Italic.otf')  format('opentype'),
+	     url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/LibreBaskerville-Italic/LibreBaskerville-Italic.woff') format('woff'), url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/LibreBaskerville-Italic/LibreBaskerville-Italic.ttf')  format('truetype'), url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/LibreBaskerville-Italic/LibreBaskerville-Italic.svg#LibreBaskerville-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family:'HelveticaNeue-Regular';
+	src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/HelveticaNeue-Regular/HelveticaNeue_gdi.eot');
+	src: url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/HelveticaNeue-Regular/HelveticaNeue_gdi.eot?#iefix') format('embedded-opentype'),
+		url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/HelveticaNeue-Regular/HelveticaNeue_gdi.woff') format('woff'),
+		url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/HelveticaNeue-Regular/HelveticaNeue_gdi.ttf') format('truetype'),
+		url('https://pro-serv-tp.s3.amazonaws.com/Fonts_assets/HelveticaNeue-Regular/HelveticaNeue_gdi.svg#HelveticaNeue-Regular') format('svg');
+	font-style: normal;
+	font-stretch: normal;
+}
+
+body {
+    font-family: 'HelveticaNeue';background: #ebebeb;font-size: 14px;
+    line-height: 1.42857143;color: #333;margin: 0;padding: 0;
+}
+#app {
+    float: left;width: 100%;height: auto;background: #ebebeb;
+}
+input:focus,select:focus,textarea:focus{
+    outline: 2px solid #d2b578;
+}
+@media screen and (max-width:1920px) and (min-width:1200px) {
+    .container {
+        padding-right: 15px;padding-left: 15px;margin-right: auto;
+        margin-left: auto;width: 960px;display: block;
+    }
+    .landingInfo p span{
+        display: block;
+    }
+}
+
+@media screen and (max-width:1199px) and (min-width:992px) {
+    .container {
+        padding-right: 15px;padding-left: 15px;margin-right: auto;
+        margin-left: auto;width: 960px;display: block;
+    }
+    .landingInfo p span{
+        display: block;
+    }
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+    .container {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:767px) and (min-width:1px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.background {
+    background-color: #fff;float: left;width: 100%;height: auto;
+}
+.topHeader {
+    float: left;width: 100%;padding: 10px 0;margin: 0;
+}
+.topHeader img {
+    float: left;width: 100%;height: auto;
+}
+.content {
+    float: left;width: 100%;height: auto;
+}
+.landingInfo {
+    float: left;width: 100%;padding: 0 18%;
+    margin: 0;height: auto;text-align: center;box-sizing: border-box;
+}
+
+.landingInfo h1 {
+    font-family: 'HelveticaNeueLTStd-Th';color: #213a79;
+    float: left;width: 100%;height: auto;margin: 20px 0px;
+    font-size: 40px;font-weight: lighter;
+}
+.landingInfo h6 {
+    font-weight: 100;word-spacing: 1px;color: #5c5c5c;
+    float: left;width: 100%;height: auto;
+    margin: 0 0 10px;text-align: left;font-size: 14px;
+    line-height: 18px;font-family: 'HelveticaNeue';
+}
+.landingInfo h6 a{
+    font-family: 'HelveticaNeue-Bold';
+    color: #5c5c5c; text-decoration: underline;
+    font-size: 14px;cursor: pointer;font-weight: 100;
+}
+.centerText {
+    text-align: center !important;
+}
+.landingInfo p {
+    color: #5c5c5c;float: left;width: 100%;
+    height: auto;margin: 0 0 10px;text-align: left;
+    font-size: 14px;line-height: 18px;font-family: 'HelveticaNeue';
+
+}
+.landingInfo h5 {
+    float: left;width: 100%;font-size: 20px;color: #213a79;
+    font-weight: 100;margin: 0 0 15px;
+    padding: 0;text-align: left;font-family: 'HelveticaNeueLTStd-Th';
+}
+.landingInfo .imageMadeleine {
+    float: left;width: 100%;height: auto;margin: 50px 0px;
+    padding: 0;
+}
+.landingInfo ul {
+    float: left;width: 100%;text-align: left;
+    padding: 0 0 0 15px;margin: 0 0;
+}
+.landingInfo ul li {
+    list-style-type: decimal;line-height: 25px;
+    float: left;width: 100%;height: auto;
+    padding: 2px 0; font-size: 14px;
+    margin: 0;font-family: 'HelveticaNeue';color: #5c5c5c;
+}
+.landingInfo ul li .bestText {
+    float: left;width: 100%;position: relative;z-index: 0;
+    right: 14px;height: auto; font-size: 14px;
+}
+.landingInfo .paddMarg {
+    margin: 30px 0;
+}
+.landingInfo button {
+    margin: 50px 0px 50px;
+    background: transparent;text-transform: capitalize;
+    font-size: 14px;color: #213a79;
+    cursor: pointer;font-family: 'HelveticaNeue-Light';
+    /*border: 2px solid #d0ad64;padding: 10px 45px;*/
+    /*-moz-box-shadow: 0 2px 0 #d0ad64;
+    -webkit-box-shadow: 0 2px 0 #d0ad64;
+    box-shadow: 0 2px 0 #d0ad64;*/
+    /*border: 5px solid transparent;*/
+    padding: 9px 55px;
+    border-style: solid;
+    border-width: 5px;
+    -webkit-border-image: url(../img/borderimg.png) 5 repeat; /* Safari 3.1-5 */
+    -o-border-image: url(../img/borderimg.png) 5 repeat; /* Opera 11-12.1 */
+    border-image: url(../img/borderimg.png) 5 repeat;
+    border-image:url(../img/borderimg.png) 5 fill repeat;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.landingInfo button:focus, .register:focus, .checkInput:focus{
+    sutline: none;
+    outline: none;
+}
+.register {
+    margin: 50px 0px;
+    background: transparent;text-transform: capitalize;
+    font-size: 14px;color: #213a79;
+    cursor: pointer;font-family: 'HelveticaNeue-Light';
+    /*border: 2px solid #d0ad64;padding: 10px 45px;*/
+    /*-moz-box-shadow: 0 2px 0 #d0ad64;
+    -webkit-box-shadow: 0 2px 0 #d0ad64;
+    box-shadow: 0 2px 0 #d0ad64;*/
+    /*border: 5px solid transparent;*/
+    padding: 9px 55px;
+    border-style: solid;
+    border-width: 5px;
+    -webkit-border-image: url(../img/borderimg.png) 5 repeat; /* Safari 3.1-5 */
+    -o-border-image: url(../img/borderimg.png) 5 repeat; /* Opera 11-12.1 */
+    border-image: url(../img/borderimg.png) 5 repeat;
+    border-image:url(../img/borderimg.png) 5 fill repeat;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.submitButtonBlock {
+  disable: false;
+}
+.submitButtonNone {
+  disable: true;
+}
+.termsCondi {
+    text-align: center;float: left;margin-bottom: 50px;
+    width: 100%;text-decoration: underline;color: #5c5c5c; font-size: 14px;
+    cursor: pointer;font-family: 'HelveticaNeue';letter-spacing: 1px;
+}
+.landingInfo button:focus {
+    outline: none;
+}
+.landingInfo .soicalicons {
+    float: left;width: 100%;height: auto;margin: 40px 0 40px;
+    padding: 0;
+}
+.share {
+    padding-right: 14px;position: relative;bottom: 5px;
+    z-index: 0;
+}
+.imgicons {
+    width: 28px;height: 28px;padding-right: 5px;
+}
+.formOne {
+    float: left;width: 100%;padding: 0 32%;
+    margin: 30px 0 0 0;height: auto;
+    text-align: center;box-sizing: border-box;
+}
+.formGroup {
+    float: left;width: 100%;height: auto;
+    margin-bottom: 15px;
+}
+.formGroup .formLabel {
+    display: inline-block;max-width: 100%;
+    float: left;margin-bottom: 5px;
+    font-weight: 400;font-size: 14px;
+    text-align: left;color: #5c5c5c;line-height: 20px;
+}
+.formGroup .formLabel span {
+    font-size: 14px;color: #5c5c5c;
+    line-height: 20px; font-weight: 100;
+}
+.formGroup .formLabel b {
+    color: #ed1c24;font-size: 14px;padding-right: 5px;
+}
+.formGroup .formLabel .formOpacity b {
+    color: #5c5c5c;font-size: 15px;padding: 0px 5px 0px 0px;
+    font-weight: normal;
+}
+.formGroup .formControl {
+    display: block;width: 100%;height: 35px;
+    float: left;padding: 0px 10px;
+    font-size: 14px;line-height: 1.42857143;color: #5c5c5c;
+    background-color: #fff;/*background-image: none;*/
+    border: 1px solid #e1e1e1;border-radius: 1px;
+    -webkit-transition: border-color ease-in-out .15s,
+    -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,
+     box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,
+    box-shadow ease-in-out .15s;
+    box-sizing: border-box;
+}
+.formGroup .formSelect {
+    display: block;width: 70px;height: 35px;
+    float: left;padding: 0px 10px;
+    font-size: 14px;line-height: 1.42857143;color: #5c5c5c;
+    background-color: #fff;/*background-image: none;*/
+    border: 1px solid #e1e1e1;border-radius: 1px;
+    -webkit-transition: border-color ease-in-out .15s,
+     -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,
+    box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,
+    box-shadow ease-in-out .15s;
+    box-sizing: inherit;margin-right: 14px;
+}
+.formGroup .formFull {
+    float: left;width: 100%;height: auto;
+}
+.formGroup .formInput {
+    display: block;height: 35px;float: left;
+    padding: 0px 10px;font-size: 14px;line-height: 1.42857143;
+    color: #555;background-color: #fff;background-image: none;
+    box-sizing: inherit;border: 1px solid #e1e1e1;border-radius: 1px;
+    -webkit-transition: border-color ease-in-out .15s,
+    -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,
+    box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,
+     box-shadow ease-in-out .15s;
+}
+.formGroup .formCheck.textLeft {
+    float: left;width: 100%;height: auto;text-align: left;
+}
+.formGroup .formCheck span {
+    float: left;padding-right: 15px;
+}
+.formGroup .formCheck span input {
+    cursor: pointer;
+}
+.formGroup .formCheck span label {
+    font-size: 14px;position: relative;bottom: 5px;
+    padding-left: 5px;z-index: 0;font-weight: 100;cursor: pointer;
+    font-family: 'HelveticaNeue'; color: #5c5c5c; line-height: 25px;
+}
+.formCheck input[type='radio'] {
+    -webkit-appearance: none;width: 20px;height: 20px;
+    border: 1px solid #e1e1e1;border-radius: 50%;outline: none;
+}
+.formCheck input[type='radio']:before {
+    content: '';display: block;width: 60%;height: 60%;
+    margin: 20% auto;border-radius: 50%;
+}
+.formCheck input[type='radio']:checked:before {
+    background: #d0ad64;
+}
+.registerText {
+    float: left;width: 100%;padding: 0 17%;
+    text-align: center;box-sizing: border-box;
+}
+.registerText h1 {
+    font-family: 'HelveticaNeue-Thin';color: #213a79;
+    outline: none;
+    float: left;width: 100%;height: auto;
+    margin: 20px 0px 0;font-size: 40px;font-weight: lighter;
+}
+.registerText p {
+    color: #5c5c5c;float: left;width: 100%;height: auto;
+    margin: 20px 0 30px;font-size: 14px;line-height: 18px;
+    font-family: 'HelveticaNeue-Medium';
+}
+.timeLine {
+    float: left;width: 100%;padding: 0 36%;text-align: center;
+    box-sizing: border-box;
+}
+.btnDefault {
+    color: #d1ab59;background-color: #fff;border-color: #d1ab59;
+    cursor: not-allowed;font-family: 'HelveticaNeue-Medium';
+}
+.stepWizard {
+    display: table;width: 100%;float: left;position: relative;
+}
+.stepwizardRow {
+    display: table-row;
+}
+.stepwizardRow::before {
+    top: 20px;bottom: 0;position: absolute;content: " ";
+    width: 70%;height: 1px;background-color: #d0ad64;
+    z-index: 0;left: 54px;
+}
+.stepwizardRow p{
+    font-family: 'HelveticaNeueLTStd-Lt'; color: #666666;
+}
+.stepwizardRow p span{
+    font-family: 'HelveticaNeueLTStd-Lt'; color: #666666; font-size: 14px;
+}
+.stepWizardStep {
+    display: table-cell;text-align: center;position: relative;
+}
+.btnPrimary {
+    color: #fff;
+    background: rgba(209,171,89,1) !important;
+    background: -moz-linear-gradient(top, rgba(209,171,89,1) 0%, rgba(252,229,174,1) 47%,
+    rgba(235,205,140,1) 72%, rgba(231,200,133,1) 78%, rgba(209,171,89,1) 100%) !important;
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(209,171,89,1)),
+    color-stop(47%, rgba(252,229,174,1)), color-stop(72%, rgba(235,205,140,1)),
+    color-stop(78%, rgba(231,200,133,1)), color-stop(100%, rgba(209,171,89,1))) !important;
+    background: -webkit-linear-gradient(top, rgba(209,171,89,1) 0%, rgba(252,229,174,1) 47%,
+    rgba(235,205,140,1) 72%, rgba(231,200,133,1) 78%, rgba(209,171,89,1) 100%)!important;
+    background: -o-linear-gradient(top, rgba(209,171,89,1) 0%, rgba(252,229,174,1) 47%,
+    rgba(235,205,140,1) 72%, rgba(231,200,133,1) 78%, rgba(209,171,89,1) 100%) !important;
+    background: -ms-linear-gradient(top, rgba(209,171,89,1) 0%, rgba(252,229,174,1) 47%,
+    rgba(235,205,140,1) 72%, rgba(231,200,133,1) 78%, rgba(209,171,89,1) 100%) !important;
+    background: linear-gradient(to bottom, rgba(209,171,89,1) 0%, rgba(252,229,174,1) 47%, r
+    gba(235,205,140,1) 72%, rgba(231,200,133,1) 78%, rgba(209,171,89,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d1ab59',
+    endColorstr='#d1ab59', GradientType=0 );
+    border-color: #d1ab59;
+    cursor: pointer;font-family: 'HelveticaNeue-Medium';
+}
+.btnCircle {
+    width: 36px;height: auto;text-align: center;
+    padding: 6px 0;font-size: 18px;line-height: 1.428571429;
+    border-radius: 50%;border: 1px solid #d1ab59;
+    display: inline-block;margin-bottom: 0;font-weight: 400;
+    white-space: nowrap;vertical-align: middle;
+    -ms-touch-action: manipulation;touch-action: manipulation;
+    -webkit-user-select: none;-moz-user-select: none;
+    -ms-user-select: none;user-select: none;
+    background-image: none;font-family: 'HelveticaNeue-Medium';
+}
+.formSecond {
+    float: left;width: 100%;margin: 30px 0 0 0;
+    height: auto;text-align: center;box-sizing: border-box;
+}
+.formSecondFst {
+    float: left;width: 100%;padding: 2% 19%;height: auto;
+    text-align: center;box-sizing: border-box;
+    background-image: radial-gradient(ellipse farthest-corner at center top,
+    rgb(243, 243, 243) 0%, rgb(255, 255, 255) 70%);
+}
+.formSecondScnd {
+    float: left;width: 100%;padding: 2% 19%;height: auto;
+    text-align: center;box-sizing: border-box;
+    background-image: radial-gradient(ellipse farthest-corner at center top,
+    rgb(243, 243, 243) 0%, rgb(255, 255, 255) 70%);
+}
+
+.formSecondThird {
+    float: left;width: 100%;padding: 2% 19%;
+    height: auto;text-align: center;box-sizing: border-box;
+    background-image: radial-gradient(ellipse farthest-corner at center top,
+    rgb(243, 243, 243) 0%, rgb(255, 255, 255) 70%);
+}
+.formSecondFour {
+    float: left;width: 100%;padding: 2% 19%;height: auto;
+    text-align: center;box-sizing: border-box;
+    background-image: radial-gradient(ellipse farthest-corner at center top,
+    rgb(243, 243, 243) 0%, rgb(255, 255, 255) 70%);
+}
+.formSecondFive {
+    float: left;width: 100%;padding: 2% 19%;height: auto;
+    text-align: center;box-sizing: border-box;
+    background-image: radial-gradient(ellipse farthest-corner at center top,
+    rgb(243, 243, 243) 0%, rgb(255, 255, 255) 70%);
+}
+.formSecondSix {
+    float: left;width: 100%;padding: 2% 19%;height: auto;
+    text-align: center;box-sizing: border-box;
+    background-image: radial-gradient(ellipse farthest-corner at center top,
+    rgb(243, 243, 243) 0%, rgb(255, 255, 255) 70%);
+}
+/*.formSecondSix .checkBox:nth-child(5){
+    width: 210px ;
+}*/
+
+
+.formSecond .formGroup .formLabel {
+    display: inline-block;max-width: 100%;float: left;width: 100%;
+    margin-bottom: 10px;font-weight: 400;text-align: center;
+    color: #5c5c5c;font-family: 'HelveticaNeue-Medium';
+}
+.formThird .formGroup .formLabel {
+    display: inline-block;
+    max-width: 100%;float: left;width: 100%;
+    margin-bottom: 10px;font-weight: 100;text-align: center;
+    color: #5c5c5c;font-family:'HelveticaNeue-Medium';
+}
+.formGroup .formCheck {
+    float: left;width: 100%;height: auto;text-align: center;
+}
+.formGroup .formCheck span {
+    float: none;padding-right: 15px;
+}
+.choicesSection {
+    text-align: center; float: left; width: 100%;padding: 10px 0px;
+}
+.choicesSection input {
+    -webkit-appearance: none;-moz-appearance: none;appearance: none;
+    border: none;display: none;
+}
+/*.choicesSection .choicesTopImg input .backGround{
+    background-size: 100% 100%;cursor: pointer;background-repeat: no-repeat;
+    display: inline-block;width: 130px;height: 100px;
+}
+.radioBox{}
+*/
+.choicesSection  input{
+    margin:0;padding:0;-webkit-appearance:none;
+    -moz-appearance:none;appearance:none; display: none;
+}
+.formSecondFst .choicesSection .labelRadio{
+    cursor: pointer;background-size: contain;background-repeat: no-repeat;
+    display: inline-block;width: 130px;height: 95px;
+}
+.choicesSection .straightRadio{
+    background-image: url(../img/straight.png);background-size: 100%!important;
+}
+.choicesSection input:checked +.labelRadio {
+    -webkit-filter: none;-moz-filter: none;filter: none;
+    outline: 3px solid #caa54d;border-radius: 0px;
+}
+.choicesSection .labelRadio {
+    /*opacity: 0.3;*/opacity: 1;
+}
+.choicesSection.dirty input:not(:checked) +.labelRadio{
+  opacity: 0.3;
+}
+.choicesSection.dirty input:checked +.labelRadio{
+
+  opacity: 1;
+}
+
+.choicesSection .wavyRadio{
+    background-image: url(../img/wavy.png);background-size: 100%!important;
+}
+
+.choicesSection .curlyRadio{
+    background-image: url(../img/curly.png);background-size: 100%!important;
+}
+
+.choicesSection .afroCurlsRadio{
+    background-image: url(../img/afrocurls.png);background-size: 100%!important;
+}
+/*
+.choicesSection input[type="radio"]:checked {
+    opacity: 1;border: 3px solid #caa54d;border-radius: 2px;
+}
+.choicesSection input:checked+.straightLabel {
+    -webkit-filter: none;-moz-filter: none;filter: none;
+}
+.choicesSection input {
+    opacity: 0.3;
+}*/
+.formSecondFst .choicesSection .choicesTopImg {
+    float: left;width: 25%;text-align: center;
+}
+.choicesSection span .straightLabel {
+    float: left;width: 100%;height: auto;font-weight: 100;
+    padding-top: 10px;color: #5c5c5c;
+    font-size: 14px;font-family: 'HelveticaNeueLTStd-Lt'; cursor: pointer;
+}
+.choicesSection input:focus {
+    outline: none;
+}
+.formSecondThird  .choicesSection .labelRadio {
+    background-size: 100% 100%;cursor: pointer;
+    background-repeat: no-repeat;display: inline-block;
+    width: 69px;height: 69px;
+}
+.formSecondThird .choicesSection .choicesMediumImg {
+    float: left;width: 14%;text-align: center;
+}
+.choicesSection .blondeRadio {
+    background-image: url(../img/blonde.png);background-size: 100%!important;
+}
+.choicesSection .brownRadio {
+    background-image: url(../img/brown.png);background-size: 100%!important;
+}
+.choicesSection .darkBrownRadio {
+    background-image: url(../img/darkbrown.png);background-size: 100%!important;
+}
+.choicesSection .blackRadio {
+    background-image: url(../img/black.png);background-size: 100%!important;
+}
+.choicesSection .redRadio {
+    background-image: url(../img/red.png);background-size: 100%!important;
+}
+.choicesSection .greyRadio {
+    background-image: url(../img/grey.png);background-size: 100%!important;
+}
+.choicesSection .otherRadio {
+    background-image: url(../img/other.png);background-size: 100%!important;
+}
+.formSecondFour .choicesSection .choicesBottomImg .labelRadio  {
+    background-size: 100% 100%;cursor: pointer;background-repeat: no-repeat;
+    display: inline-block;width: 79px;height: 50px;
+}
+.formSecondFour .choicesSection .choicesBottomImg {
+    float: left;width: 20%;text-align: center;
+}
+.choicesSection .fairRadio  {
+    background-image: url(../img/fair.png);
+}
+.choicesSection .lightRadio  {
+    background-image: url(../img/light.png);
+}
+.choicesSection .mediumRadio{
+    background-image: url(../img/medium.png);
+}
+.choicesSection .deepRadio  {
+    background-image: url(../img/deep.png);
+}
+.choicesSection .darkRadio  {
+    background-image: url(../img/dark.png);
+}
+.formSecondScnd form,
+.formSecondThird form,
+.formSecondFour form,
+.formSecondFive form {
+    float: left;width: 100%;text-align: center;padding: 10px 0px;
+}
+.formSecondSix .checkBox {
+    float: left;width: 24%;text-align: left;
+}
+.selectAll {
+    float: left;width: 100%;opacity: 0.5;padding: 0px 0 0;
+    font-family: 'HelveticaNeue' !Important;
+    font-size: 13px !Important;
+}
+.checkBox label {
+    position: relative;z-index: 0;bottom: 4px; color: #5c5c5c;
+    left: 4px; font-weight: 100; font-size: 14px;line-height: 25px;
+    cursor: pointer;font-family: 'HelveticaNeue';
+}
+.checkInput {
+    height: 18px;width: 18px;
+}
+.acceptBox .checkBox .checkInput{
+    float: left;
+}
+.acceptBox .checkBox label{
+    float: left;width: 90%;font-family: 'HelveticaNeue';
+}
+.checkBox label a{
+    color: #5c5c5c;padding: 0px 2px;text-decoration: underline;
+}
+.txtAcceptBox label a{
+    color: #5c5c5c;padding: 0px 2px; cursor: pointer;text-decoration: underline;
+}
+.checkBox label b{
+    color: #ed1c24;font-size: 14px;padding-right: 5px;
+}
+.checkInput[type="checkbox"]::before {
+    height: 18px;width: 18px;
+}
+.checkInput[type="checkbox"]::before {
+    position: relative;display: block;width: 15px;
+    height: 15px;border: 1px solid #e2e2e2;
+    content: "";background: #FFF;box-shadow: none;
+}
+.checkInput[type="checkbox"]:checked::after {
+    content: url(../img/checkicon.png);
+}
+.checkInput[type="checkbox"]::after {
+    position: relative;display: block;left: 3px;
+    bottom: 15px;width: 10px;height: 10px;border-width: 1px;
+    content: "";
+}
+.formThird {
+    float: left;width: 100%;text-align: center;
+    box-sizing: border-box;margin: 50px 0px;
+}
+.formThirdFst {
+    float: left;width: 100%;text-align: center;box-sizing: border-box;
+    padding: 4% 19% 5%;
+    background-image: radial-gradient(ellipse farthest-corner at center top,
+    rgb(243, 243, 243) 0%, rgb(255, 255, 255) 70%);
+}
+.formThirdScnd {
+    float: left;width: 100%;text-align: center;
+    box-sizing: border-box;padding: 4% 19% 5%;
+    background-image: radial-gradient(ellipse farthest-corner at center top,
+    rgb(243, 243, 243) 0%, rgb(255, 255, 255) 70%);
+}
+.formThirdThird {
+    float: left;width: 100%;text-align: center;
+    box-sizing: border-box;padding: 4% 19% 5%;
+    background-image: radial-gradient(ellipse farthest-corner at center top,
+    rgb(243, 243, 243) 0%, rgb(255, 255, 255) 70%);
+}
+.formThirdFouth {
+    float: left;width: 100%;text-align: center;box-sizing: border-box;
+    padding: 4% 19% 5%;
+    background-image: radial-gradient(ellipse farthest-corner at center top,
+    rgb(243, 243, 243) 0%, rgb(255, 255, 255) 70%);
+}
+.formThirdFive {
+    float: left;width: 100%;text-align: center;
+    box-sizing: border-box;padding: 4% 6% 1%;
+    background-image: radial-gradient(ellipse farthest-corner at center top,
+    rgb(243, 243, 243) 0%, rgb(255, 255, 255) 70%);
+}
+.formGroup .formControlText {
+    display: block;width: 100%;float: left;padding: 10px 10px;
+    font-size: 14px;line-height: 1.42857143;color: #555;
+    background-color: #fff;background-image: none;
+    border: 1px solid #e1e1e1;border-radius: 1px;
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    box-sizing: border-box; margin-top: 20px;
+}
+.formThird .formLabel .formOpacity {
+    float: left;width: 100%;text-align: center;
+    font-weight: 400;opacity: 0.5;
+    font-size: 13px;padding: 0;box-sizing: border-box;
+}
+.formThird .formLabel .formTxt {
+    float: left;width: 100%;text-align: center;font-weight: 600;
+    font-size: 15px;
+}
+.formThird h4 {
+    color: #686c99;float: left;width: 100%;height: auto;
+    font-size: 24px;margin: 20px 0px;font-weight: 100;
+}
+.agentsDeatils {
+    float: left;width: 100%;box-sizing: border-box;padding: 0 15%;
+    margin: 5px 0px 25px;
+}
+.agentsDeatils input {
+    width: 75%;margin-left: 15px;
+}
+.acceptBox {
+    float: left;width: 100%;margin: 0px;
+    box-sizing: border-box;padding: 0 27%;text-align: left;
+}
+.errorState span{
+    color: red !important;
+}
+.errorMsg {
+  color: red !important;text-align: center;
+  float: left;width: 100%;
+  box-sizing: border-box;margin-top: 20px
+}
+.thankYou {
+    float: left;width: 100%;text-align: left;
+    padding: 0 19%;margin: 0;box-sizing: border-box;
+}
+.thankYou h2 {
+    float: left;font-size: 40px;width: 100%;
+    text-align: center;margin: 35px 0 20px;padding: 0;
+    color: #213a79;font-weight: 100;font-family: 'HelveticaNeue-Thin';
+}
+.thankYou p {
+    float: left;width: 100%;height: auto;color: #5c5c5c;font-size: 14px;
+    line-height: 20px;margin: 0 0 10px;padding: 0;
+    font-family: 'HelveticaNeue';
+}
+.thankYou img {
+    float: left;width: 100%;margin: 50px 0px 0;
+}
+.thankYou span {
+    text-align: center;float: left;width: 100%;
+    margin: 5% 0 9%;font-style: italic;font-size: 14px;
+    color: #5c5c5c;font-family: 'LibreBaskerville-Italic';
+}
+.imageVideo {
+    float: left; width: 100%; height: auto;padding: 20px 0px;
+}
+.imageVideo .imgVideoSection{
+    float: left; width: 50%; height: auto;
+}
+.imgVideoSection .imgLabel{
+    float: left; width: 100%;font-size: 14px; font-weight: 100;padding: 5px 0;
+}
+.imgVideoImage{
+    width: 124px; height: 124px;
+}
+.imageUpload{
+    padding: 10px 0;width: 100%;float: left;
+}
+.imageUpload img{
+    position: relative;z-index: 0;top: 6px;cursor: pointer;
+}
+.imageUpload input{
+    width: 140px;margin: 0px 0px 0px 12px;
+}
+.imgTextVideo{
+    float: left;width: 100%;height: 70px;
+    /*height: 50px;*/
+}
+.imgTextVideo small{
+    opacity: 0.3;font-size: 14px;font-weight: 100;
+    margin: 0px auto; display: block; width: 65%;
+}
+.imgLabel b{
+    color: #ff0000;
+}
+.image-upload > input{
+    display: none;
+}
+.image-upload img{
+    width: auto;
+}
+select.formSelect{
+    background: url(../img/arrow.png) no-repeat right;
+    -webkit-appearance: none;-moz-appearance: none;
+    background-position: 90%;cursor: pointer;
+}
+select.formControl{
+    background: url(../img/arrow.png) no-repeat right;
+    -webkit-appearance: none;-moz-appearance: none;
+    background-position: 97%;cursor: pointer;
+}
+.btnModal{
+    position: fixed;right: 25px;top: 15px;
+    z-index: 1;background: none;border: none;cursor: pointer;
+}
+.btnModal:focus{
+    outline: none;
+}
+.headText{
+    float: left; width: 100%; box-sizing: border-box; color: #fff; margin: 20px 0px 0px;
+    font-size:30px; font-weight: 100;font-family: 'HelveticaNeue';
+}
+.subText{
+    float: left; width: 100%; box-sizing: border-box; color: #fff;
+    font-size:14px;font-weight: 100;font-family: 'HelveticaNeueLTStd-Lt';
+}
+
+.imageUpload input{
+    border: 1px solid #e1e1e1; border-radius: 1px;
+}
+.inactivePTag{
+ opacity: 0.5
+}
+/*.videoForm span label{
+    float: left;width: auto; height: auto; position: relative;
+    z-index: 0;left: 60px; bottom: 7px;
+}*/
+.margTop{
+    margin-top: 5px;float: left; width: auto;position: relative;
+    left: 65px;width: auto;
+}
+.margTop form{
+  float: left; width: auto;
+}
+.margTop form span label img{top: 0;}
+.multiSelect div{
+    border-radius: 0px;
+    border-color: #e1e1e1 !important; background-color: #ffffff !important;
+    /*border: 1px solid #e1e1e1;*/ box-shadow: none !important;text-align: left;
+    font-size: 14px;
+}
+.multiSelect div span div{
+    color: #5c5c5c !important;font-size: 14px;
+}
+.multiSelect b{
+    /*width: 7px;
+    height: 7px;
+    border-top: 2px solid green;
+    border-right: 2px solid green;
+    -moz-transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(SizingMethod='auto expand',
+    M11=-0.7071067811865476, M12=-0.7071067811865475, M21=0.7071067811865475,
+    M22=-0.7071067811865476)";*/
+    border-color: rgb(118, 116, 116);border-left: transparent;
+    -moz-transform: rotate(46deg);
+    -webkit-transform: rotate(46deg);
+    -o-transform: rotate(46deg);
+    -ms-transform: rotate(46deg);
+    width: 6px;height: 6px;border-top: 2px;border-right: 2px solid rgb(118, 116, 116);
+}
+.progBar{
+    width: 124px;display:block;margin:0px auto;
+}
+.phoneCode{
+    width: 55px; margin-right: 20px;
+}
+.txtAcceptBox{
+    float: left;width: 100%;box-sizing: border-box;
+    padding: 0 13%;margin: 25px 0px 25px;
+}
+.infoImageVideo{
+    position: relative; z-index: 0; left: 30px;
+}
+.txtAcceptBox .formLabel .formOpacity {
+    float: left;width: 100%;text-align: center;
+    font-weight: 400;opacity: 0.5;
+    font-size: 12px !important;padding: 0;box-sizing: border-box;
+    line-height: 24px;
+}
+.txtAcceptBox .formLabel .formOpacity span{
+    text-align: center;
+    font-size: 12px !important;padding: 0;box-sizing: border-box;
+}
+
+.diverseText{
+    font-family: 'HelveticaNeue';opacity: 0.5;float: left;
+    width: 100%;text-align: center;box-sizing: content-box;
+    font-size: 13px;padding-top: 2px;
+}
+.footerContant{
+    float: left; width: 100%;height: auto;
+    background: url(../img/footerBG.png) no-repeat; background-size: 100% 100%;
+    box-sizing: border-box;
+}
+.textFooter{
+    float: left; width: 100%; height: auto; box-sizing: border-box; padding: 65px 15% 30px;
+}
+.textFooter ul{
+    float: left;width: 100%;display: block;padding: 0;
+    margin: 0;
+}
+.textFooterT{
+    width: 25%; float: left;list-style: none;
+}
+.lineWidth{
+    width: auto;margin: 0px 35px;
+}
+.lineWidth img{
+    height: 50px; width: 1px;
+}
+.textFooterLog{
+    height: auto;
+}
+.textFooterLog p{
+    height: auto;margin: 0px;
+    text-align: center;padding: 10px 0px;
+}
+.textFooterLog p img{
+    height: auto;width: auto;padding: 0;display: block;margin: 0px auto;
+    text-align: center;
+}
+.textFooterTxt{
+    height: auto;
+}
+.textFooterTxt p{
+    height: auto;margin: 0px;
+    text-align: center;
+}
+.textFooterTxt p a{
+    height: auto; color: #999896;
+    text-decoration: none;font-size: 13px;
+    cursor: pointer; line-height: 20px;
+    font-family: 'HelveticaNeue-Light';
+}
+.textFooterUniliver{
+    height: auto;
+}
+.textFooterUniliver p{
+    height: auto;margin: 0px;
+    text-align: center;padding: 10px 0px;
+}
+.textFooterUniliver p img{
+     height: auto; width: auto; margin: 0;padding: 0;
+}
+.textFooterUniliver p span{
+     height: auto; width: auto; margin: 0;padding: 0;
+     color: #757370; padding-left: 5px;font-size: 13px;
+     position: relative;z-index: 0;bottom: 7px;line-height: 20px;
+     font-family: 'HelveticaNeue-Light';
+}
+.errorState a{
+    color: red !important;
+}
+.paddBtm{
+    margin-bottom: 10px;
+}
+.formGroup .formLabel .formOpacity {
+    float: left;width: 100%;text-align: center;
+    font-weight: 400;opacity: 0.5;font-family: 'HelveticaNeue';
+    font-size: 13px;padding: 0;box-sizing: border-box;
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+    .landingInfo{
+        padding: 0 12%;
+    }
+    .formOne{
+        padding: 0 20%;
+    }
+    .registerText{
+        padding: 0 12%;
+    }
+    .timeLine{
+        padding: 0 30%;
+    }
+    .formSecondFst{
+        padding: 2% 12%;
+    }
+    .formSecondThird{
+        padding: 2% 12%;
+    }
+    .formSecondFour{
+        padding: 2% 12%;
+    }
+    .formSecondScnd{
+        padding: 2% 12%;
+    }
+    .formSecondFive{
+        padding: 2% 12%;
+    }
+    .formSecondSix{
+        padding: 2% 15%;
+    }
+    .formThirdFst{
+        padding: 4% 12% 5%;
+    }
+    .formThirdScnd{
+        padding: 4% 12% 5%;
+    }
+    .formThirdThird{
+        padding: 4% 12% 5%;
+    }
+    .formThirdFouth{
+        padding: 4% 12% 5%;
+    }
+    .agentsDeatils{
+        padding: 0 7%;
+    }
+    .acceptBox{
+        padding: 0 20%;
+    }
+    .thankYou{
+        padding: 0 12%;
+    }
+    /*.videoForm span label{
+        left: 60px; bottom: 7px;
+    }*/
+    .margTop{
+        left: 85px;
+    }
+    .textFooter{
+        padding: 65px 13% 30px;
+    }
+}
+@media screen and (max-width:899px) and (min-width:768px) {
+  .margTop{
+      left: 65px;
+  }
+}
+@media screen and (max-width:767px) and (min-width:481px) {
+    .landingInfo {
+        padding: 0 10%;
+    }
+    .registerText{
+        padding: 0 10%;
+    }
+    .timeLine{
+        padding: 0 25%;
+    }
+    .formOne{
+        padding: 0 10%;
+    }
+    .formSecondFst{
+        padding: 5% 10%;
+    }
+    .formSecondFst .choicesSection .choicesTopImg{
+        width: 50%;
+    }
+    .choicesSection span .straightLabel{
+        padding:10px 0px;
+    }
+    .formSecondThird{
+        padding: 5% 10%;
+    }
+    .formSecondThird .choicesSection .choicesMediumImg{
+        width: 20%;
+    }
+    .formSecondFour{
+        padding: 5% 10%;
+    }
+    .formSecondFour .choicesSection .choicesBottomImg{
+        width: 30%;
+    }
+    .formSecondFive{
+        padding: 5% 10%;
+    }
+    .formSecondSix{
+        padding: 5% 10%;
+    }
+    .formThirdFst{
+        padding: 5% 10%;
+    }
+    .imgTextVideo{
+        height: 70px;
+    }
+    .imgTextVideo small{
+        width: 100%;
+    }
+    .formThirdScnd{
+        padding: 5% 10%;
+    }
+    .formThirdThird{
+        padding: 5% 10%;
+    }
+    .formThirdFouth{
+        padding: 5% 10%;
+    }
+    .formThirdFive{
+        padding: 5% 10%;
+    }
+    .agentsDeatils{
+        padding:0;
+    }.txtAcceptBox{
+        padding: 0 0%;
+    }
+    .agentsDeatils input {
+        width: 66%;margin-left: 0px;
+    }
+    .acceptBox{
+        padding: 0 5%;
+    }
+    .thankYou{
+        padding: 0 10%;
+    }
+    .margTop{
+        left: 55px;
+    }
+    .textFooter{
+        padding: 65px 2% 30px;
+    }
+    .textFooterT{
+        width: 27%;
+    }
+    .lineWidth{
+        width: auto;margin: 0px 20px;
+    }
+    .lineWidth img{
+        height: 50px; width: 1px;
+    }
+
+}
+@media screen and (max-width:599px) and (min-width:481px) {
+  .margTop{
+      left: 15px;
+  }
+}
+@media screen and (max-width:480px) and (min-width:1px) {
+    .landingInfo {
+        padding: 0 25px;
+    }
+    .landingInfo h1{
+        font-size: 34px; margin: 25px 0px 15px;
+    }
+    .registerText{
+        padding: 0 25px;
+    }
+    .registerText h1{
+        font-size: 30px;
+    }
+    .registerText p{
+        margin: 10px 0 30px;
+    }
+    .timeLine{
+        padding: 0 25px;
+    }
+    .stepwizardRow::before {
+        left: 60px;
+    }
+    .formOne{
+        padding: 0 25px;
+    }
+    .formGroup .formSelect{
+        width: 45px; margin-right: 10px;font-size: 12px;
+    }
+    .formSecondFst{
+        padding: 20px 25px;
+    }
+    .formSecondThird{
+        padding: 20px 25px;
+    }
+    .formSecondFour{
+        padding: 20px 25px;
+    }
+    .formSecondFive{
+        padding: 20px 25px;
+    }
+    .formSecondSix{
+        padding: 20px 25px;
+    }
+    .formSecondFst .choicesSection .choicesTopImg{
+        width: 50%;
+    }
+    .formSecondThird .choicesSection .choicesMediumImg{
+        width: 33%;
+    }
+    .choicesSection span .straightLabel{
+        padding: 10px 0px;
+    }
+    .formSecondFour .choicesSection .choicesBottomImg{
+        width: 50%;
+    }
+    .formThirdFst{
+        padding:20px 25px;
+    }
+    .formThirdScnd{
+        padding:20px 25px;
+    }
+    .formThirdThird{
+        padding:20px 25px;
+    }
+    .formThirdFouth{
+        padding:20px 25px;
+    }
+    .agentsDeatils{
+        padding: 0;
+    }
+    .agentsDeatils input{
+        width: 60%;margin-left: 0px;
+    }
+    .acceptBox{
+        padding: 0;
+    }
+    .imgTextVideo{
+        height: 95px;
+    }
+    .imgTextVideo small{
+        width: 100%;
+    }
+    /*.imageUpload input {
+        width: 90px;margin: 0px 0px 0px 10px;
+    }*/
+    .imageUpload input {
+        width: 70px;margin: 0px 0px 0px 10px;
+    }
+    .thankYou{
+        padding:0px 25px;
+    }
+    .thankYou h2{
+        font-size: 34px;
+    }
+    .thankYou img {
+        margin: 30px 0px 0;
+    }
+    .thankYou span{
+        margin: 5% 0 20%;
+    }
+    .formSecondScnd{
+        padding:20px 25px;
+    }
+    .margTop{
+        left: 30px;
+    }
+    .phoneCode{
+      width: 35px; margin-right: 20px;
+    }
+    .infoImageVideo{
+       left: 20px;
+    }
+    .textFooter{
+        padding: 65px 2% 30px;
+    }
+    .textFooterT{
+        width: 27%;
+    }
+    .lineWidth{
+        width: auto;margin: 0px 8px;
+    }
+    .lineWidth img{
+        height: 50px; width: 1px;
+    }
+    .textFooterUniliver p span{
+        width: 100%; float: left; bottom: 0;
+        font-size: 11px;
+    }
+    .txtAcceptBox{
+        padding: 0 0%;
+    }
+}
+@media screen and (max-width:400px) and (min-width:1px) {
+    .formGroup .formCheck.mobLeft{
+        text-align: left;
+    }
+    .margTop{
+        left: 15px;
+    }
+
+}
+/*.popUpContent {
+  position: absolute;top: 50%;left: 50%;right: auto;bottom: auto;
+  border: none;background: #fff;overflow: auto;
+  -webkit-overflow-scrolling: touch;border-radius: 0px;
+  outline: none;padding: 30px;transform: translate(-50%, -50%);
+  background-color: #4a5e92;max-width: 675px;
+}*/
+.popUpContent{
+    position: relative;border: none;background: #fff;
+    overflow: auto;border-radius: 0px;outline: none;
+    padding: 30px;background-color: #4a5e92;
+    width: 100%;max-width: 500px;height: 400px;
+    display: block;margin: 0px auto;
+    top: 100px;-webkit-overflow-scrolling: touch;
+}
+.popUpContent{
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -o-transition: -o-transform .3s ease-out;
+    transition: transform .3s ease-out;
+    -webkit-transform: translate(0,-25%);
+    -ms-transform: translate(0,-25%);
+    -o-transform: translate(0,-25%);
+    transform: translate(0,-25%);
+}
+.popUpContent{
+    -webkit-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+}
+@media screen and (max-width:767px) and (min-width:481px) {
+    .popUpContent{
+         padding: 30px;width: 100%;max-width: 70%;height: 400px;top: 20px; transform: none;
+    }
+
+}
+@media screen and (max-width:480px) and (min-width:1px) {
+    .popUpContent{
+        padding: 10px 30px 30px;width: 100%;max-width: 75%;height: 400px;top: 20px;
+        z-index: 0;
+    }
+    .headText{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:704px) and (min-width:424px) {
+.formSecondSix .checkBox{
+    width: 50%;
+}
+}
+@media screen and (max-width:423px) and (min-width:1px) {
+    .formSecondSix .checkBox{
+        width: 100%;
+    }
+
+}
+/*profile css*/
+.profile{
+    float: left;width: 100%;height: auto;
+    box-sizing: border-box;padding: 0 12%;
+}
+.profile .profileDetails{
+    float: left;width: 100%;padding: 0;
+    margin: 40px 0px;height: auto;
+}
+.profileDetails .ProfileImage{
+    float: left;width: 124px;padding: 0 20px 0 0;
+    margin: 0 0 20px 0;height: 124px;
+}
+.profileDetails .ProfileImage img{
+    float: left; width: 100%; height: auto;
+}
+.profileDetails .ProfileContent{
+    float: left;width: 75%;
+}
+.profileDetails .ProfileContent h1{
+    font-family: 'HelveticaNeue';color: #213a79;
+    float: left;width: 100%;height: auto;margin: 20px 0px 20px;
+    font-size: 26px;line-height: 25px;font-weight: 500;padding: 5px 10px;
+}
+.profileDetails .ProfileContent .tabelSection{
+    overflow-x:auto;float: left;width: 100%
+}
+.profileDetails .ProfileContent .tabelSection table{
+    width: 100%;display: table;border-collapse: collapse;
+    border-spacing: 0;border: none;
+}
+.profileDetails .ProfileContent .tabelSection table tbody{
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+.ProfileContent .tabelSection table tr{
+    text-align: left;border: none;display: table-row;vertical-align: inherit;
+    border-color: inherit;
+}
+.ProfileContent .tabelSection table tr td{
+    text-align: left;border: none;color: #213a79;
+    padding: 5px 10px;font-size: 14px;line-height: 25px;font-weight: 100;
+    color: #5c5c5c;
+}
+.ProfileContent .tabelSection table tr td b{
+    font-weight: 100;font-size: 14px;line-height: 25px;padding-right: 5px;
+    font-family: 'HelveticaNeue-Medium';vertical-align: top;
+}
+.ProfileContent .tabelSection table tr td:nth-child(1){
+    width: 200px;
+}
+
+@media screen and (max-width:991px) and (min-width:768px) {
+
+}
+@media screen and (max-width:991px) and (min-width:768px) {
+
+}
+@media screen and (max-width:767px) and (min-width:481px) {
+    .profile{
+        padding: 0 10%;
+    }
+    .profileDetails .ProfileContent{
+        width: 100%;
+    }
+}
+@media screen and (max-width:480px) and (min-width:1px) {
+    .profile{
+        padding: 0 25px;
+    }
+    .profileDetails .ProfileContent{
+        float: left;width: 100%;
+    }
+    .profileDetails .ProfileContent h1{
+        font-size: 22px;
+    }
+
+}
+
+@media screen and (max-width:1920px) and (min-width:1200px) {
+    .formSecond .formGroup .formCheck span {
+        padding-right: 35px;
+    }
+    .formSecondSix .checkBox:nth-child(5){
+            width: 50%;
+    }
+    .formSecondSix .checkBox:nth-child(2){
+            width: 50%;
+    }
+    .registerFont{
+        font-family: 'HelveticaNeue-Regular';
+        word-spacing: -1px;
+    }
+    .topHeader img:nth-child(2){display: none;}
+}
+@media screen and (max-width:1199px) and (min-width:992px) {
+    .formSecondSix .checkBox:nth-child(5){
+            width: 50%;
+    }
+    .formSecondSix .checkBox:nth-child(2){
+            width: 50%;
+    }
+    .breakTag{
+        display: none;
+    }
+    .topHeader img:nth-child(2){display: none;}
+}
+@media screen and (max-width:991px) and (min-width:768px) {
+    .formSecondSix .checkBox:nth-child(5){
+            width: 50%;
+    }
+    .formSecondSix .checkBox:nth-child(2){
+            width: 50%;
+    }
+    .breakTag{
+        display: none;
+    }
+    .topHeader img:nth-child(2){display: none;}
+}
+@media screen and (max-width:767px) and (min-width:481px) {
+    .formSecondSix .checkBox:nth-child(5){
+            width: 50%;
+    }
+    .formSecondSix .checkBox:nth-child(2){
+            width: 50%;
+    }
+    .breakTag{
+        display: none;
+    }
+    .topHeader img:nth-child(2){display: none;}
+}
+@media screen and (max-width:480px) and (min-width:1px) {
+    .breakTag{
+        display: none;
+    }
+    .topHeader img:nth-child(1){display: none;}
+}
+@media screen and (max-width:398px) and (min-width:1px) {
+    .formSecondFive .formGroup .formCheck span{
+            width: 100%;float: left;
+    }
+}
+@media screen and (max-width:407px) and (min-width:1px) {
+    .acceptBox .checkBox label{
+        font-size: 10px;
+    }
+}
+
+
+
+/*firefox*/
+@-moz-document url-prefix() {
+    .multiSelect div{
+        border: 1px solid;
+    }
+}
+.subhead{
+    float: left; width: 100%; box-sizing: border-box; color: #fff;
+    font-size:14px;font-weight: 100;font-family: 'HelveticaNeueLTStd-Lt';
+}
+.underline{
+    text-decoration:underline;color: #fff;
+}
+.subTextright{
+    float: left; width: 100%; box-sizing: border-box; color: #fff;
+    font-size:14px;font-weight: 100;font-family: 'HelveticaNeueLTStd-Lt';
+    /*margin-left:20px ;*/padding: 0px 15px;
+}
+.textunderline{
+    float: left; width: 100%; box-sizing: border-box; color: #fff;text-align: center;
+    font-size:14px;font-weight: 100;font-family: 'HelveticaNeueLTStd-Lt';
+    /*margin-left:20px ;*/
+    text-decoration:underline;
+}
+.cookietxt{
+    float: left; width: 100%; box-sizing: border-box; color: #fff;text-align: left;
+    font-size:14px;font-weight: 100;font-family: 'HelveticaNeueLTStd-Lt';
+    /*margin-left:20px ;*/
+}
+.txtquestion{
+    float: left; width: 100%; box-sizing: border-box; color: #fff;text-align: left;
+    font-size:14px;font-weight: 600;font-family: 'HelveticaNeueLTStd-Lt';
+    /*margin-left:20px ;*/ cursor: pointer;
+}
+.tabletxt{
+    float: left; width: 100%;  color: #fff;border: 1px solid #dddddd;
+    font-weight: 600;font-family: 'HelveticaNeueLTStd-Lt'; padding: 8px;
+}
+table.tabletxt {
+    border-collapse: collapse;
+}
+table.tabletxt, th, td {
+    border: 1px solid #dddddd;
+}
+.tablehead{
+    float: left; width: 100%; box-sizing: border-box; color: #fff;text-align: left;
+    font-size:14px;font-weight: 600;font-family: 'HelveticaNeueLTStd-Lt';
+    /*margin-left:20px ;*/
+}
+.tablehead1.tablehead2.tablehead3.tablehead4{
+    width: 33%;
+}
+.listing {
+    float: left;margin: 0;padding: 5px 0 5px 15px;
+}
+.subText a{
+    color: #fff; cursor: pointer;
+}
+.lineHegt{
+    line-height: 20px !important
+}
+.formSecond .formGroup .formLabel small{
+    font-size: 14px;
+}
+.errorState{
+  color: red !important;
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+    .popUpContent{transform: none!important;-webkit-transform:none !important;}
+    .btnModal{
+        -webkit-appearance: none;right: 37px;top:33px;
+    }
+    .btnModal img{
+        -webkit-appearance: none;
+    }
+ }
+ @media screen and (device-aspect-ratio: 375/667) {
+     .popUpContent{transform: none!important;-webkit-transform:none !important;}
+     .btnModal{
+        -webkit-appearance: none;right: 37px;top:33px;
+    }
+    .btnModal img{
+        -webkit-appearance: none;
+    }
+  }
+  @media screen and (device-aspect-ratio: 16/9) {
+      .popUpContent{transform: none!important;-webkit-transform:none !important;}
+     .btnModal{
+        -webkit-appearance: none;right: 37px;top:33px;
+    }
+    .btnModal img{
+        -webkit-appearance: none;
+    }
+  }
+@media screen and (max-device-width: 767px) and (orientation: landscape) {
+    .btnModal{
+        right: 100px;top:50px;
+    }
+}
+
+/*Dev*/
+@media screen and (max-width:320px) and (min-width:1px) {
+  .formGroup .formInput {
+     padding: 0px 6px !important;
+  }
+}
+
+
+/*IE Browser*/
+.formSeclectIe::-ms-expand{
+    display: none;
+}
+input.formInput:-ms-input-placeholder,
+textarea.formControlText:-ms-input-placeholder {
+   color: #aba9a9;
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   .landingInfo button, .register{
+       border-color: #d0ad64;border-width: 3px;
+   }
+}
+
+.rotateImg {
+  width: 16px;
+  height: 16px;
+  margin-left: 3px;
+  background-color: #dbb350;
+  border-radius: 50px;
+  padding: 3px 3px;
+}
+/*IE Browser*/
+
+@media screen and (max-width:499px) and (min-width:481px) {
+    .imageUpload input {
+            width: 130px;
+    }
+}
